@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
+import "react-image-gallery/styles/css/image-gallery.css";
 
 const HeaderBox = styled.ul`
   width: 100%;
@@ -31,6 +32,10 @@ const HeaderNavLink = styled(NavLink)`
   color: #000;
   transition: 0.4s;
 
+  &.active {
+    color: royalblue;
+  }
+
   &:hover {
     color: #939305;
   }
@@ -42,19 +47,27 @@ class Header extends React.Component {
       <header>
         <HeaderBox>
           <HeaderItem>
-            <HeaderNavLink to="/">HOME</HeaderNavLink>
+            <HeaderNavLink activeClassName="active" to="/">
+              HOME
+            </HeaderNavLink>
           </HeaderItem>
 
           <HeaderItem>
-            <HeaderNavLink to="/intro">INTRO</HeaderNavLink>
+            <HeaderNavLink activeClassName="active" to="/intro">
+              INTRO
+            </HeaderNavLink>
           </HeaderItem>
 
           <HeaderItem>
-            <HeaderNavLink to="/notice">NOTICE</HeaderNavLink>
+            <HeaderNavLink activeClassName="active" to="/notice">
+              NOTICE
+            </HeaderNavLink>
           </HeaderItem>
 
           <HeaderItem>
-            <HeaderNavLink to="/contact">CONTACT</HeaderNavLink>
+            <HeaderNavLink activeClassName="active" to="/contact">
+              CONTACT
+            </HeaderNavLink>
           </HeaderItem>
         </HeaderBox>
       </header>

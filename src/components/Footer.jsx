@@ -5,8 +5,6 @@ const FooterBox = styled.div`
   width: 100%;
   height: 260px;
 
-  background-color: #082812;
-
   position: absolute;
   bottom: 0;
 
@@ -18,8 +16,7 @@ const FooterDiv = styled.div`
   width: 20%;
   height: 100%;
 
-  background-color: #1c2e22;
-  color: #fff;
+  color: #000000;
 
   display: flex;
   flex-direction: row;
@@ -36,7 +33,7 @@ const FooterP = styled.div`
 `;
 
 const FooterSamp = styled.samp`
-  color: #fff;
+  color: #000000;
 
   margin-top: 20px;
 `;
